@@ -1,0 +1,5 @@
+[build]
+  # CRA treats warnings as errors when CI=true; face-api.js emits a harmless
+  # "Can't resolve 'fs'" warning under webpack 5, so disable that behavior.
+  command = "CI=false npm run build"
+  publish = "build"
